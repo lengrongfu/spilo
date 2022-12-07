@@ -51,7 +51,7 @@ jobs:
       with:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ secrets.Docker_password }}
 
     - name: Build and export to local docker for testing
       uses: docker/build-push-action@v3
